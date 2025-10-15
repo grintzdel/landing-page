@@ -16,7 +16,7 @@ const HeroBackgroundImage = (): JSX.Element => {
 
 const HeroSubtitle = (): JSX.Element => {
     return (
-        <p className="uppercase font-bold mb-4 text-white/80">
+        <p className="uppercase font-medium mb-4 text-white">
             Plant Shop
         </p>
     );
@@ -50,7 +50,7 @@ const HeroActions = (): JSX.Element => {
 
 const HeroContent = (): JSX.Element => {
     return (
-        <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 lg:px-25">
+        <div className="relative z-10 h-full flex flex-col justify-center px-6 pt-30 pb-10 md:px-12 lg:px-25">
             <HeroSubtitle/>
             <HeroTitle/>
             <HeroDescription/>

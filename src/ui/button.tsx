@@ -42,11 +42,11 @@ export const Button = ({
         <Link
             href={href}
             className={`font-medium rounded-full flex justify-center items-center content-center h-10 px-9 text-white capitalize whitespace-nowrap border-2 border-[#3a9843] bg-[#3a9843] hover:bg-white hover:text-[#3a9843] transition-colors ${
-                withArrow ? "gap-3" : ""
+                withArrow ? "gap-1" : ""
             } ${className}`}
         >
             {text}
-            {withArrow && <Arrow className="rotate-180"/>}
+            {withArrow && <Arrow className="rotate-180 w-3 h-3"/>}
         </Link>
     );
 }
