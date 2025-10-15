@@ -5,7 +5,7 @@ import {Divider} from "@/ui/divider";
 import {IoSearchOutline, IoLogInOutline, IoCartOutline} from "react-icons/io5";
 import type {IconType} from "react-icons";
 
-interface NavLinkProps {
+type NavLinkProps = {
     href: string;
     children: React.ReactNode;
 }
