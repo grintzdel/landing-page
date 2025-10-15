@@ -5,6 +5,7 @@ import ReassurancesSection from "@/modules/app/react/reassurances-section";
 import CategoriesSection from "@/modules/app/react/categories-section";
 import TopTrendingProductsSection from "@/modules/app/react/top-trending-products-section";
 import FeaturedCategoriesSection from "@/modules/app/react/featured-categories-section";
+import TestimonialsSection from "@/modules/app/react/testimonials-section";
 
 export default function HomePage() {
     return (
@@ -14,6 +15,7 @@ export default function HomePage() {
             <CategoriesSection/>
             <TopTrendingProductsSection/>
             <FeaturedCategoriesSection/>
+            <TestimonialsSection/>
         </React.Fragment>
     )
 }
