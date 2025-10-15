@@ -1,12 +1,15 @@
 import React from "react";
+
 import HeroSection from "@/modules/app/react/hero-section";
-import ReassuranceSection from "@/modules/app/react/reassurance-section";
+import ReassurancesSection from "@/modules/app/react/reassurances-section";
+import CategoriesSection from "@/modules/app/react/categories-section";
 
 export default function HomePage() {
     return (
         <React.Fragment>
             <HeroSection/>
-            <ReassuranceSection/>
+            <ReassurancesSection/>
+            <CategoriesSection/>
         </React.Fragment>
     )
 }
