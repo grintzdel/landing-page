@@ -7,15 +7,20 @@ type CategoryProps = {
     layout?: "center" | "left";
 }
 
+type CategoriesContainerProps = {
+    itemCount: number;
+    children: React.ReactNode;
+}
+
 export const Category = ({title, src, layout = "center"}: CategoryProps): JSX.Element => {
     const overlayPosition = layout === "center"
         ? "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        : "bottom-8 left-8";
+        : "top-1/2 left-8 -translate-y-1/2";
 
     const titleWords = title.split(' ');
 
     return (
-        <div className="relative w-full h-80 overflow-hidden group cursor-pointer">
+        <div className="relative w-full h-96 overflow-hidden group cursor-pointer">
             <Image
                 src={src}
                 alt={title}
@@ -36,11 +41,6 @@ export const Category = ({title, src, layout = "center"}: CategoryProps): JSX.El
         </div>
     );
 };
-
-type CategoriesContainerProps = {
-    itemCount: number;
-    children: React.ReactNode;
-}
 
 export const CategoriesContainer = ({itemCount, children}: CategoriesContainerProps): JSX.Element => {
     const getMinWidth = () => {
