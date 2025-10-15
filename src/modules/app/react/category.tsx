@@ -52,7 +52,7 @@ export const CategoriesContainer = ({itemCount, children}: CategoriesContainerPr
 
     return (
         <div
-            className="grid gap-6"
+            className="grid gap-12"
             style={{
                 gridTemplateColumns: `repeat(auto-fit, minmax(${getMinWidth()}px, 1fr))`
             }}
