@@ -1,4 +1,4 @@
-import {CategoriesContainer, Category} from "@/modules/app/react/category";
+import {CategoriesContainer, Category} from "@/modules/app/react/components/category";
 
 export default function CategoriesSection() {
     return (

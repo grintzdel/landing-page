@@ -1,5 +1,5 @@
 import {FaTruck, FaShieldAlt, FaUndo, FaHeadset} from "react-icons/fa";
-import {Reassurance} from "@/modules/app/react/reassurance";
+import {Reassurance} from "@/modules/app/react/components/reassurance";
 
 export default function ReassurancesSection() {
     return (

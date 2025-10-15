@@ -1,7 +1,7 @@
 import React, {JSX} from "react";
 import {Button} from "@/ui/button";
 import {Divider} from "@/ui/divider";
-import {ProductsContainer, ProductCard} from "@/modules/app/react/products";
+import {ProductsContainer, ProductCard} from "@/modules/app/react/components/products";
 
 const TopTrendingProductHeader = (): JSX.Element => {
     return (

@@ -1,5 +1,5 @@
-import HeroOverlay from "@/modules/app/react/hero-overlay";
-import HeroProduct from "@/modules/app/react/hero-product";
+import HeroOverlay from "@/modules/app/react/components/hero-overlay";
+import HeroProduct from "@/modules/app/react/components/hero-product";
 
 export default function HeroSection() {
     return (

@@ -1,5 +1,5 @@
 import {JSX} from "react";
-import {TestimonialCard} from "@/modules/app/react/testimonial";
+import {TestimonialCard} from "@/modules/app/react/components/testimonial";
 
 const TestimonialsHeader = (): JSX.Element => {
     return (
