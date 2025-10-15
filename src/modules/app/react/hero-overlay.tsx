@@ -61,7 +61,7 @@ const HeroContent = (): JSX.Element => {
 
 export default function HeroOverlay() {
     return (
-        <div className="relative w-full h-full lg:w-[70%]">
+        <div className="relative w-full min-h-screen lg:min-h-0 lg:h-full lg:w-[70%]">
             <HeroBackgroundImage/>
             <HeroContent/>
         </div>

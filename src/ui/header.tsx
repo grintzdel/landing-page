@@ -95,11 +95,17 @@ export const Header = (): JSX.Element => {
     return (
         <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-6 py-6">
             <div className="flex items-center gap-5">
-                <Image src="/logo-header.png" alt="logo" width={60} height={60}/>
+                <Link href="/">
+                    <Image src="/logo-header.png" alt="logo" width={60} height={60}/>
+                </Link>
                 <Divider axis="vertical" width="small" color="bg-white"/>
-                <NavList links={navLinks}/>
+                <div className="hidden md:block">
+                    <NavList links={navLinks}/>
+                </div>
             </div>
-            <HeaderActions actions={headerActions}/>
+            <div className="hidden md:block">
+                <HeaderActions actions={headerActions}/>
+            </div>
         </header>
     )
 }
