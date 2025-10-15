@@ -5,6 +5,13 @@ type ProductsContainerProps = {
     children: React.ReactNode;
 }
 
+type ProductCardProps = {
+    title: string;
+    category: string;
+    price: string;
+    src: string;
+}
+
 export const ProductsContainer = ({children}: ProductsContainerProps): JSX.Element => {
     return (
         <div
@@ -17,13 +24,6 @@ export const ProductsContainer = ({children}: ProductsContainerProps): JSX.Eleme
         </div>
     );
 };
-
-type ProductCardProps = {
-    title: string;
-    category: string;
-    price: string;
-    src: string;
-}
 
 export const ProductCard = ({title, category, price, src}: ProductCardProps): JSX.Element => {
     return (
