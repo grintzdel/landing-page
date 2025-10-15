@@ -17,7 +17,7 @@ const ProductImage = (): JSX.Element => {
 
 const ProductTitle = (): JSX.Element => {
     return (
-        <h2 className="text-2xl font-bold mb-2 max-w-">
+        <h2 className="text-2xl font-bold mb-2 max-w-[260px]">
             Hoya carnosa Tricolor
         </h2>
     );
@@ -33,7 +33,7 @@ const ProductCategory = (): JSX.Element => {
 
 const ProductDescription = (): JSX.Element => {
     return (
-        <p className="text-gray-600 max-w-sm mb-6">
+        <p className="text-gray-600 max-w-[260px] mb-6">
             Hill Science Plan Healthy Development Puppy Food Large...
         </p>
     );
