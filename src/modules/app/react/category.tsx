@@ -12,8 +12,10 @@ export const Category = ({title, src, layout = "center"}: CategoryProps): JSX.El
         ? "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         : "bottom-8 left-8";
 
+    const titleWords = title.split(' ');
+
     return (
-        <div className="relative w-full h-80 overflow-hidden rounded-lg group cursor-pointer">
+        <div className="relative w-full h-80 overflow-hidden group cursor-pointer">
             <Image
                 src={src}
                 alt={title}
@@ -21,8 +23,15 @@ export const Category = ({title, src, layout = "center"}: CategoryProps): JSX.El
                 className="object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-black/20 transition-opacity group-hover:bg-black/30"/>
-            <div className={`absolute ${overlayPosition} bg-black/70 px-6 py-4 rounded backdrop-blur-sm`}>
-                <h3 className="text-white font-bold text-xl whitespace-nowrap capitalize">{title}</h3>
+            <div className={`absolute ${overlayPosition} bg-black/60 px-12 py-12`}>
+                <h3 className="text-white font-bold text-3xl capitalize text-center">
+                    {titleWords.map((word, index) => (
+                        <React.Fragment key={index}>
+                            {word}
+                            {index < titleWords.length - 1 && <br/>}
+                        </React.Fragment>
+                    ))}
+                </h3>
             </div>
         </div>
     );
@@ -45,7 +54,7 @@ export const CategoriesContainer = ({itemCount, children}: CategoriesContainerPr
         <div
             className="grid gap-6"
             style={{
-                gridTemplateColumns: `repeat(auto-fill, minmax(${getMinWidth()}px, 1fr))`
+                gridTemplateColumns: `repeat(auto-fit, minmax(${getMinWidth()}px, 1fr))`
             }}
         >
             {children}
