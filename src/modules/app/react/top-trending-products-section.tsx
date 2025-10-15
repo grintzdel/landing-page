@@ -5,8 +5,8 @@ import {ProductsContainer, ProductCard} from "@/modules/app/react/products";
 
 const TopTrendingProductHeader = (): JSX.Element => {
     return (
-        <div className="flex justify-between items-center mb-13 gap-8">
-            <h2 className="text-4xl font-bold whitespace-nowrap">Top Trending Products</h2>
+        <div className="flex flex-col justify-between items-center mb-13 gap-8 md:flex-row">
+            <h2 className="text-2xl font-bold whitespace-nowrap lg:text-4xl">Top Trending Products</h2>
             <Divider axis="horizontal" width="full" color="bg-gray-300"/>
             <Button text="Shop plants" href="#"/>
         </div>
