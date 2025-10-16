@@ -12,7 +12,7 @@ type ProductCardProps = {
     src: string;
 }
 
-export const ProductsContainer = ({children}: ProductsContainerProps): JSX.Element => {
+export const ProductsContainer: React.FC<ProductsContainerProps> = ({children}: ProductsContainerProps): JSX.Element => {
     return (
         <div
             className="grid gap-6"
@@ -25,7 +25,12 @@ export const ProductsContainer = ({children}: ProductsContainerProps): JSX.Eleme
     );
 };
 
-export const ProductCard = ({title, category, price, src}: ProductCardProps): JSX.Element => {
+export const ProductCard: React.FC<ProductCardProps> = ({
+                                                            title,
+                                                            category,
+                                                            price,
+                                                            src
+                                                        }: ProductCardProps): JSX.Element => {
     return (
         <div className="flex flex-col group cursor-pointer">
             <div className="relative w-full h-110 mb-4 overflow-hidden">

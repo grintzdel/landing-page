@@ -1,4 +1,4 @@
-import {JSX} from "react";
+import React, {JSX} from "react";
 import {Avatar} from "@/ui/avatar";
 import {FaQuoteLeft} from "react-icons/fa";
 
@@ -9,7 +9,12 @@ type TestimonialCardProps = {
     avatar: string;
 }
 
-export const TestimonialCard = ({name, since, review, avatar}: TestimonialCardProps): JSX.Element => {
+export const TestimonialCard: React.FC<TestimonialCardProps> = ({
+                                                                    name,
+                                                                    since,
+                                                                    review,
+                                                                    avatar
+                                                                }: TestimonialCardProps): JSX.Element => {
     return (
         <div className="bg-gray-100 pt-10 pl-10 pr-10 pb-15">
             <div className="flex flex-col gap-8">

@@ -15,7 +15,7 @@ const ProductImage = (): JSX.Element => {
     );
 };
 
-const ProductTitle = (): JSX.Element => {
+const ProductTitle: React.FC = (): JSX.Element => {
     return (
         <h2 className="text-2xl font-bold mb-2 max-w-[260px]">
             Hoya carnosa Tricolor
@@ -23,7 +23,7 @@ const ProductTitle = (): JSX.Element => {
     );
 };
 
-const ProductCategory = (): JSX.Element => {
+const ProductCategory: React.FC = (): JSX.Element => {
     return (
         <p className="text-[#3a9843] font-bold mb-3">
             accessories
@@ -31,7 +31,7 @@ const ProductCategory = (): JSX.Element => {
     );
 };
 
-const ProductDescription = (): JSX.Element => {
+const ProductDescription: React.FC = (): JSX.Element => {
     return (
         <p className="text-gray-600 max-w-[260px] mb-6">
             Hill Science Plan Healthy Development Puppy Food Large...
@@ -39,7 +39,7 @@ const ProductDescription = (): JSX.Element => {
     );
 };
 
-const ProductPrice = (): JSX.Element => {
+const ProductPrice: React.FC = (): JSX.Element => {
     return (
         <span className="text-2xl font-bold ml-4">
             $58
@@ -47,7 +47,7 @@ const ProductPrice = (): JSX.Element => {
     );
 };
 
-const ProductActions = (): JSX.Element => {
+const ProductActions: React.FC = (): JSX.Element => {
     return (
         <div className="flex items-center">
             <Button text="Add to Cart" href="#" withArrow/>

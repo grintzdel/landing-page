@@ -1,7 +1,7 @@
-import {JSX} from "react";
+import React, {JSX} from "react";
 import {TestimonialCard} from "@/modules/app/react/components/testimonial";
 
-const TestimonialsHeader = (): JSX.Element => {
+const TestimonialsHeader: React.FC = (): JSX.Element => {
     return (
         <div className="flex flex-col justify-center items-center gap-3 mb-12">
             <p className="text-lg font-medium text-[#3a9843] tracking-tight">Testimonial</p>

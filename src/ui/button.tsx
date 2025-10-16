@@ -16,7 +16,11 @@ type VideoButtonProps = {
     text?: string;
 }
 
-export const VideoButton = ({href, asText = false, text}: VideoButtonProps): JSX.Element => {
+export const VideoButton: React.FC<VideoButtonProps> = ({
+                                                            href,
+                                                            asText = false,
+                                                            text
+                                                        }: VideoButtonProps): JSX.Element => {
     return (
         <Link href={href} className="flex items-center gap-3 cursor-pointer group">
             <div
@@ -32,12 +36,12 @@ export const VideoButton = ({href, asText = false, text}: VideoButtonProps): JSX
     );
 };
 
-export const Button = ({
-                           text,
-                           href,
-                           withArrow = false,
-                           className = ""
-                       }: ButtonProps): JSX.Element => {
+export const Button: React.FC<ButtonProps> = ({
+                                                  text,
+                                                  href,
+                                                  withArrow = false,
+                                                  className = ""
+                                              }: ButtonProps): JSX.Element => {
     return (
         <Link
             href={href}

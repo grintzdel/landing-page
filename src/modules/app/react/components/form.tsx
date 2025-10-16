@@ -1,7 +1,7 @@
-import {JSX} from "react";
+import React, {JSX} from "react";
 import {Button} from "@/ui/button";
 
-const Input = (): JSX.Element => {
+const Input: React.FC = (): JSX.Element => {
     return (
         <div className="relative w-full max-w-md">
             <input
@@ -20,7 +20,7 @@ const Input = (): JSX.Element => {
     )
 }
 
-export const NewsletterForm = (): JSX.Element => {
+export const NewsletterForm: React.FC = (): JSX.Element => {
     return (
         <Input/>
     )

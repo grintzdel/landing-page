@@ -3,7 +3,7 @@ import {Button} from "@/ui/button";
 import {Divider} from "@/ui/divider";
 import {ProductsContainer, ProductCard} from "@/modules/app/react/components/product";
 
-const TopTrendingProductHeader = (): JSX.Element => {
+const TopTrendingProductHeader: React.FC = (): JSX.Element => {
     return (
         <div className="flex flex-col justify-between items-center mb-13 gap-8 md:flex-row">
             <h2 className="text-2xl font-bold whitespace-nowrap lg:text-4xl">Top Trending Products</h2>

@@ -7,7 +7,11 @@ type ReassuranceProps = {
     description: string;
 }
 
-export const Reassurance = ({icon: Icon, title, description}: ReassuranceProps): JSX.Element => {
+export const Reassurance: React.FC<ReassuranceProps> = ({
+                                                            icon: Icon,
+                                                            title,
+                                                            description
+                                                        }: ReassuranceProps): JSX.Element => {
     return (
         <div className="flex flex-row gap-5">
             <div>

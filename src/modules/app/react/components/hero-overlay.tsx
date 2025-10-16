@@ -2,7 +2,7 @@ import Image from "next/image";
 import {Button, VideoButton} from "@/ui/button";
 import React, {JSX} from "react";
 
-const HeroBackgroundImage = (): JSX.Element => {
+const HeroBackgroundImage: React.FC = (): JSX.Element => {
     return (
         <Image
             src="/hero-media-background.jpg"
@@ -14,7 +14,7 @@ const HeroBackgroundImage = (): JSX.Element => {
     );
 };
 
-const HeroSubtitle = (): JSX.Element => {
+const HeroSubtitle: React.FC = (): JSX.Element => {
     return (
         <p className="uppercase font-medium mb-4 text-white">
             Plant Shop
@@ -22,7 +22,7 @@ const HeroSubtitle = (): JSX.Element => {
     );
 };
 
-const HeroTitle = (): JSX.Element => {
+const HeroTitle: React.FC = (): JSX.Element => {
     return (
         <h1 className="text-6xl font-light mb-6 text-white capitalize max-w-[530px] lg:text-8xl">
             Create Your Orban Jungle
@@ -30,7 +30,7 @@ const HeroTitle = (): JSX.Element => {
     );
 };
 
-const HeroDescription = (): JSX.Element => {
+const HeroDescription: React.FC = (): JSX.Element => {
     return (
         <p className="mb-8 max-w-sm text-gray-400">
             The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced
@@ -39,7 +39,7 @@ const HeroDescription = (): JSX.Element => {
     );
 };
 
-const HeroActions = (): JSX.Element => {
+const HeroActions: React.FC = (): JSX.Element => {
     return (
         <div className="flex gap-4 items-center">
             <Button text="Shop now" href="#"/>
@@ -48,7 +48,7 @@ const HeroActions = (): JSX.Element => {
     );
 };
 
-const HeroContent = (): JSX.Element => {
+const HeroContent: React.FC = (): JSX.Element => {
     return (
         <div className="relative z-10 h-full flex flex-col justify-center px-6 pt-30 pb-10 md:px-12 lg:px-25">
             <HeroSubtitle/>

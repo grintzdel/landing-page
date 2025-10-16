@@ -1,4 +1,4 @@
-import {JSX} from "react";
+import React, {JSX} from "react";
 
 type DividerProps = {
     axis?: 'vertical' | 'horizontal';
@@ -6,7 +6,11 @@ type DividerProps = {
     width?: 'full' | 'regular' | 'small';
 }
 
-export const Divider = ({axis = 'horizontal', color = 'bg-black', width = 'regular'}: DividerProps): JSX.Element => {
+export const Divider: React.FC<DividerProps> = ({
+                                                    axis = 'horizontal',
+                                                    color = 'bg-black',
+                                                    width = 'regular'
+                                                }: DividerProps): JSX.Element => {
     const isVertical = axis === 'vertical';
 
     const widthMap = {

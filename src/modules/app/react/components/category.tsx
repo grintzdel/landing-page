@@ -12,7 +12,7 @@ type CategoriesContainerProps = {
     children: React.ReactNode;
 }
 
-export const Category = ({title, src, layout = "center"}: CategoryProps): JSX.Element => {
+export const Category: React.FC<CategoryProps> = ({title, src, layout = "center"}: CategoryProps): JSX.Element => {
     const overlayPosition = layout === "center"
         ? "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         : "top-1/2 left-8 -translate-y-1/2";
@@ -42,7 +42,10 @@ export const Category = ({title, src, layout = "center"}: CategoryProps): JSX.El
     );
 };
 
-export const CategoriesContainer = ({itemCount, children}: CategoriesContainerProps): JSX.Element => {
+export const CategoriesContainer: React.FC<CategoriesContainerProps> = ({
+                                                                            itemCount,
+                                                                            children
+                                                                        }: CategoriesContainerProps): JSX.Element => {
     const getMinWidth = () => {
         if (itemCount <= 2) return 300;
         if (itemCount === 3) return 280;

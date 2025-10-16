@@ -10,7 +10,7 @@ type NavLinkProps = {
     children: React.ReactNode;
 }
 
-const NavLink = ({href, children}: NavLinkProps): JSX.Element => {
+const NavLink: React.FC<NavLinkProps> = ({href, children}: NavLinkProps): JSX.Element => {
     return (
         <li>
             <Link href={href} className="hover:opacity-70 transition-opacity text-white">
@@ -20,11 +20,11 @@ const NavLink = ({href, children}: NavLinkProps): JSX.Element => {
     );
 };
 
-interface NavListProps {
+type NavListProps = {
     links: Array<{ href: string; label: string }>;
 }
 
-const NavList = ({links}: NavListProps): JSX.Element => {
+const NavList: React.FC<NavListProps> = ({links}: NavListProps): JSX.Element => {
     return (
         <nav>
             <ul className="flex gap-6">
@@ -38,7 +38,7 @@ const NavList = ({links}: NavListProps): JSX.Element => {
     );
 };
 
-interface HeaderActionProps {
+type HeaderActionProps = {
     icon: IconType;
     label: string;
     href: string;
@@ -55,11 +55,11 @@ const HeaderAction = ({icon: Icon, label, href}: HeaderActionProps): JSX.Element
     );
 };
 
-interface HeaderActionsProps {
+type HeaderActionsProps = {
     actions: Array<{ icon: IconType; label: string; href: string }>;
 }
 
-const HeaderActions = ({actions}: HeaderActionsProps): JSX.Element => {
+const HeaderActions: React.FC<HeaderActionsProps> = ({actions}: HeaderActionsProps): JSX.Element => {
     return (
         <div className="flex items-center gap-5">
             {actions.map((action, index) => (
@@ -78,7 +78,7 @@ const HeaderActions = ({actions}: HeaderActionsProps): JSX.Element => {
     );
 };
 
-export const Header = (): JSX.Element => {
+export const Header: React.FC = (): JSX.Element => {
     const navLinks = [
         {href: "#", label: "Home"},
         {href: "#", label: "About"},
