@@ -54,7 +54,7 @@ const FooterMenu: React.FC<FooterMenuProps> = ({menuTitle, children}: FooterMenu
     return (
         <div className="flex flex-col gap-5">
             <h5 className="capitalize font-bold text-lg text-white">{menuTitle}</h5>
-            <FooterList children={children}/>
+            <FooterList>{children}</FooterList>
         </div>
     )
 }
